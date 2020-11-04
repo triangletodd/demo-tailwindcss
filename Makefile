@@ -6,9 +6,6 @@ dist/index.html: index.html
 dist/styles.css: styles/styles.src.css
 	yarn tailwindcss build styles/styles.src.css -o dist/styles.css
 
-install: package.json
-	yarn install
-
 build: Dockerfile
 	docker build .
 
